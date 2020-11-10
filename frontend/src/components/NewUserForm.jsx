@@ -25,7 +25,9 @@ class NewUserForm extends Component {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(reqBody),
-    });
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data));
   };
 
   render() {
