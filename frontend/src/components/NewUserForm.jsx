@@ -27,7 +27,9 @@ class NewUserForm extends Component {
       body: JSON.stringify(reqBody),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => {
+        this.state.userDets = data;
+      });
   };
 
   render() {

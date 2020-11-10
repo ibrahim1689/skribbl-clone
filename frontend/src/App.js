@@ -1,14 +1,17 @@
 import "./App.css";
 
 import NewUserForm from "./components/NewUserForm";
+import Game from "./components/Game/Game";
 
 function App() {
   return (
     <div className="App">
-      <header>
+      {/* <header className="landing-header">
         <h1>SKRIBBBLE!</h1>
-        <NewUserForm />
       </header>
+      <NewUserForm /> */}
+
+      <Game />
     </div>
   );
 }
